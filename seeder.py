@@ -178,7 +178,7 @@ def prepareRolesAndAdmin ():
         dotenv.set_key(dotenvFile, "POPS_ADMIN_PWD", password)
         # TODO set to invalid email
         user_datastore.create_user(
-            email = 'admin@purpleops.com',
+            email = 'reconnlinux@gmail.com',
             username = 'admin',
             password = password,
             roles = [Role.objects(name="Admin").first()],
