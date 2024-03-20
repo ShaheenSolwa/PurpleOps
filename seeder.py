@@ -174,7 +174,7 @@ def prepareRolesAndAdmin ():
             roleObj.save()
     
     if User.objects().count() == 0:
-        password = "123456789"
+        password = str(uuid.uuid4())
         dotenv.set_key(dotenvFile, "POPS_ADMIN_PWD", password)
         # TODO set to invalid email
         user_datastore.create_user(
